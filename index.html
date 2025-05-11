@@ -6,53 +6,97 @@
   <title>OptiMind (OMD) | Official Token Website</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f0f4f8;
+      background: #f9fbfd;
       color: #111;
     }
-    header {
-      background-color: #1a237e;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    h1, h2 {
-      color: #1a237e;
-    }
-    .section {
-      margin-bottom: 40px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
+    nav {
       background: #1a237e;
       color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    a {
-      color: #1a73e8;
+    nav a {
+      color: white;
+      margin-left: 20px;
       text-decoration: none;
+      font-weight: 600;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+      background: linear-gradient(to bottom right, #1a237e, #3f51b5);
+      color: white;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .section {
+      margin-bottom: 50px;
+    }
+    h2 {
+      color: #1a237e;
+      margin-bottom: 10px;
+    }
+    ul {
+      line-height: 1.8;
+    }
+    footer {
+      background: #1a237e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .btn {
+      background-color: #1a237e;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 4px;
+      display: inline-block;
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
+  <nav>
+    <div><strong>OptiMind (OMD)</strong></div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#token">Token</a>
+      <a href="#trade">Trade</a>
+      <a href="OptiMind_Whitepaper.pdf" target="_blank">Whitepaper</a>
+    </div>
+  </nav>
+
   <header>
     <h1>OptiMind (OMD)</h1>
-    <p>Optimized Mind. Decentralized Future.</p>
+    <p>Empowering AI-driven performance in DeFi</p>
   </header>
+
   <main>
-    <div class="section">
+    <section id="about" class="section">
       <h2>About OMD</h2>
       <p>OptiMind (OMD) is a BEP-20 token on Binance Smart Chain that empowers AI-driven utility, performance tools, and decentralized integration. With a fixed total supply of 50 billion tokens and publicly locked liquidity until 2026, OMD is built to power a smarter crypto future.</p>
-    </div>
-    <div class="section">
+    </section>
+
+    <section id="token" class="section">
       <h2>Token Details</h2>
       <ul>
         <li><strong>Token Name:</strong> OptiMind</li>
@@ -62,17 +106,25 @@
         <li><strong>Total Supply:</strong> 50,000,000,000 OMD</li>
         <li><strong>Decimals:</strong> 18</li>
       </ul>
-    </div>
-    <div class="section">
+    </section>
+
+    <section id="trade" class="section">
       <h2>Trade & Liquidity</h2>
       <p>OMD is tradable on <a href="https://pancakeswap.finance/swap?outputCurrency=0x0cA5e8719f0c2BA9eB9916002451957fC7E1e62e" target="_blank">PancakeSwap</a>. Our liquidity is locked on Unicrypt until May 2026 to ensure full transparency and trust.</p>
-    </div>
-    <div class="section">
-      <h2>Socials & Updates</h2>
-      <p>Follow us on Twitter and Telegram (coming soon) for announcements, partnerships, and roadmap progress.</p>
-      <p><a href="OptiMind_Whitepaper.pdf" target="_blank">📄 View Whitepaper</a></p>
-    </div>
+      <a href="https://pancakeswap.finance/swap?outputCurrency=0x0cA5e8719f0c2BA9eB9916002451957fC7E1e62e" target="_blank" class="btn">Buy on PancakeSwap</a>
+    </section>
+
+    <section class="section">
+      <h2>Socials & Contact</h2>
+      <p>Follow us for updates and announcements:</p>
+      <ul>
+        <li><a href="https://twitter.com/optimindtoken" target="_blank">Twitter</a></li>
+        <li><a href="https://t.me/optimindtoken" target="_blank">Telegram</a></li>
+        <li><a href="https://instagram.com/optimindtoken" target="_blank">Instagram</a></li>
+      </ul>
+    </section>
   </main>
+
   <footer>
     <p>&copy; 2025 OptiMind Token. All rights reserved.</p>
   </footer>
